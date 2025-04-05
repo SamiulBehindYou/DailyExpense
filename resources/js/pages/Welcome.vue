@@ -24,17 +24,17 @@ import { Head, Link } from '@inertiajs/vue3';
                     >
                         Log in
                     </Link>
-                    <Link
+                    <!-- <Link
                         :href="route('register')"
                         class="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
                     >
                         Register
-                    </Link>
+                    </Link> -->
                 </template>
             </nav>
         </header>
         <div class="duration-750 starting:opacity-0 flex w-full items-center justify-center opacity-100 transition-opacity lg:grow">
-            <main class="flex w-full max-w-[335px] flex-col-reverse overflow-hidden rounded-lg lg:max-w-4xl lg:flex-row">
+            <!-- <main class="flex w-full max-w-[335px] flex-col-reverse overflow-hidden rounded-lg lg:max-w-4xl lg:flex-row">
                 <div
                     class="flex-1 rounded-bl-lg rounded-br-lg bg-white p-6 pb-12 text-[13px] leading-[20px] shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:bg-[#161615] dark:text-[#EDEDEC] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d] lg:rounded-br-none lg:rounded-tl-lg lg:p-20"
                 >
@@ -780,7 +780,7 @@ import { Head, Link } from '@inertiajs/vue3';
                         class="absolute inset-0 rounded-t-lg shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d] lg:overflow-hidden lg:rounded-r-lg lg:rounded-t-none"
                     />
                 </div>
-            </main>
+            </main> -->
         </div>
         <div class="h-14.5 hidden lg:block"></div>
     </div>
