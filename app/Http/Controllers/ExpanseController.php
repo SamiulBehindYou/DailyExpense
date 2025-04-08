@@ -9,12 +9,6 @@ class ExpanseController extends Controller
 {
     public function index()
     {
-        return Inertia::render('expanses/Index', [
-            'expanses' => [
-                // Sample data
-                ['id' => 1, 'name' => 'Groceries', 'amount' => 50],
-                ['id' => 2, 'name' => 'Utilities', 'amount' => 100],
-            ],
-        ]);
+        return Inertia::render('expanses/Index');
     }
 }
