@@ -26,6 +26,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
         // Route::delete('expanses/{id}', 'destroy')->name('expanses.destroy');
     });
 
+    Route::get('history', function (){
+        return Inertia::render('history/History');
+    });
+
 });
 
 require __DIR__.'/settings.php';
