@@ -20,7 +20,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::controller(ExpanseController::class)->group(function () {
         Route::get('expanses', 'index')->name('expanses.index');
         // Route::get('expanses/create', 'create')->name('expanses.create');
-        // Route::post('expanses/store', 'store')->name('expanses.store');
+        Route::post('expanses/store', 'store')->name('expanses.store');
         // Route::get('expanses/{id}/edit', 'edit')->name('expanses.edit');
         // Route::put('expanses/{id}', 'update')->name('expanses.update');
         // Route::delete('expanses/{id}', 'destroy')->name('expanses.destroy');

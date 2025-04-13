@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('expanses', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->integer('amount');
+            $table->text('short_description')->nullable();
             $table->timestamps();
         });
     }
