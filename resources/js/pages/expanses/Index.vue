@@ -27,8 +27,8 @@ defineProps({
     <Head title="Expanses" />
 
     <AppLayout :breadcrumbs="breadcrumbs">
+        <Table :expanses="expanses" />
         <Create />
 
-        <Table :expanses="expanses" />
     </AppLayout>
 </template>

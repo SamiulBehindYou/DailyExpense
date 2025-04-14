@@ -81,7 +81,7 @@ import { router } from '@inertiajs/vue3';
 
                                 <div class="w-full md:w-1/2 px-3">
                                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">amount</label>
-                                    <input v-model="form.amount" class="appearance-none block w-full bg-black text-gray-400 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-800 focus:border-gray-500" id="grid-last-name" type="text" placeholder="eg. 1000">
+                                    <input v-model="form.amount" class="appearance-none block w-full bg-black text-gray-400 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-800 focus:border-gray-500" id="grid-last-name" type="number" placeholder="eg. 1000">
                                     <span v-if="form.errors.amount" class="text-red-500 text-sm">{{ form.errors.amount }}</span>
                                 </div>
 

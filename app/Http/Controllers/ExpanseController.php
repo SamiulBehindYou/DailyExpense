@@ -28,4 +28,15 @@ class ExpanseController extends Controller
 
         return back()->with('success', 'Expanse created successfully.');
     }
+
+    public function destroy($id)
+    {
+        // Find the expanse by ID
+        $expanse = Expanse::findOrFail($id);
+
+        // Delete the expanse
+        $expanse->delete();
+
+        return back()->with('success', 'Expanse deleted successfully.');
+    }
 }
