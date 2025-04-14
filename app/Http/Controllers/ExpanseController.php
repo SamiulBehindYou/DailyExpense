@@ -10,7 +10,8 @@ class ExpanseController extends Controller
 {
     public function index()
     {
-        return Inertia::render('expanses/Index');
+        $expanses = Expanse::orderBy('created_at', 'desc')->get();
+        return Inertia::render('expanses/Index', ['expanses' => $expanses]);
     }
 
     public function store(Request $request)

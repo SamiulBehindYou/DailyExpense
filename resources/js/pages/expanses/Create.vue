@@ -53,7 +53,6 @@ import { router } from '@inertiajs/vue3';
                 if (errors.amount) {
                     form.value.errors.amount = errors.amount;
                 }
-                console.log(form.value.errors.amount);
                 if (errors.short_description) {
                     form.value.errors.short_description = errors.short_description;
                 }

@@ -3,6 +3,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/vue3';
 import Create from './Create.vue';
+import Table from './Table.vue';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -10,6 +11,16 @@ const breadcrumbs: BreadcrumbItem[] = [
         href: '/expanses',
     },
 ];
+
+defineProps({
+    expanses: {
+        type: Object,
+        // default: () => [],
+        required: true,
+    },
+});
+
+
 </script>
 
 <template>
@@ -17,5 +28,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 
     <AppLayout :breadcrumbs="breadcrumbs">
         <Create />
+
+        <Table :expanses="expanses" />
     </AppLayout>
 </template>
