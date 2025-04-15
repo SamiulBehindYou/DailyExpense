@@ -22,7 +22,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         // Route::get('expanses/create', 'create')->name('expanses.create');
         Route::post('expanses/store', 'store')->name('expanses.store');
         // Route::get('expanses/{id}/edit', 'edit')->name('expanses.edit');
-        // Route::put('expanses/{id}', 'update')->name('expanses.update');
+        Route::put('expanse/{expanse}', 'update')->name('expanses.update');
         Route::delete('expanse/delete/{id}', 'destroy')->name('expanses.destroy');
     });
 

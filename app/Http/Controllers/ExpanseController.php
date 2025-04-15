@@ -29,6 +29,21 @@ class ExpanseController extends Controller
         return back()->with('success', 'Expanse created successfully.');
     }
 
+    public function update(Request $request, Expanse $expanse)
+    {
+        // Validate the request data
+        $update_expanse = $request->validate([
+            'title' => 'required|string|max:255',
+            'amount' => 'required|numeric|min:0',
+            'short_description' => 'nullable|string|max:1000',
+        ]);
+
+        // Update the expanse in the database
+        $expanse->update($update_expanse);
+
+        return back()->with('success', 'Expanse updated successfully.');
+    }
+
     public function destroy($id)
     {
         // Find the expanse by ID
